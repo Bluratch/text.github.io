@@ -1,0 +1,115 @@
+/* general setting */
+body {
+  background-color: beige;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+canvas {
+   width: 100%;
+ }
+ 
+.main-heading,
+.name {
+  text-transform: uppercase;
+}
+.main-heading {
+  font-size: 3rem;
+  color: aliceblue;
+  animation: changeInColor ease-out 2s infinite;
+}
+.main-cls {
+  background-color: lightgreen;
+  width: 100%;
+  filter: drop-shadow(10px 7px 11px black);
+  /* position: fixed; */
+}
+.name {
+  font-size: 2rem;
+  color: dimgrey;
+  text-shadow: 5px 4px 14px black;
+  margin-top: 2.3rem;
+  animation: rotate cubic-bezier(0.68, -0.55, 0.27, 1.55) 3.5s infinite;
+}
+.space {
+  height: 500px;
+}
+.author-pro,
+h1,
+.main-cls,
+.write-ups{
+  text-align: center;
+}
+.author-pro{
+   margin: 1rem;
+   padding: 0.8rem;
+}
+.author-pro span{
+   font-weight: 100;
+   font-family: cursive;
+   font-size: 20px;
+}
+.author-pro p{
+   font-size: 2rem;
+   font-weight: bolder;
+   letter-spacing: 0.2rem;
+   padding: 0.5rem 1.5rem;
+}
+.author-pro h4{
+   font-size: x-large;
+   color:rgb(22 116 200);
+   text-shadow: 1px 1px 20px black;
+}
+.author-pro .to-name{
+   color: rgb(13, 134, 9);
+}
+.write-ups{
+  margin: auto auto 1rem auto;
+  width: 20%;
+  opacity: 0.8;
+  color: #19d7a7d5;
+  font: oblique bold 2rem Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+h1{
+  color: white;
+}
+#write-ups-div{
+  background-color: black;
+}
+#date{
+  position: fixed;
+  top: 0.4rem;
+  left: 0.3rem;
+  color: #22d222;
+  font-size: 1.8rem;
+}
+.non-space{
+  margin-bottom: 0;
+}
+
+/* animations */
+@keyframes changeInColor {
+  0%,
+  100% {
+    color: aliceblue;
+    transform: scaleY(0.5);
+  }
+
+  50% {
+    color: black;
+    transform: scaleY(1.5);
+  }
+}
+
+@keyframes rotate {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(360deg);
+  }
+}
